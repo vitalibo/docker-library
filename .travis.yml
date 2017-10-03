@@ -1,0 +1,8 @@
+language: bash
+services:
+  - docker
+script:
+  - docker --version
+  - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
+  - chmod ugo+x update.sh
+  - ./update.sh

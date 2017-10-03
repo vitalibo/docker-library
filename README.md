@@ -1,5 +1,7 @@
 # Docker Library
 
+[![Build Status](https://travis-ci.org/vitalibo/docker-library.svg?branch=master)](https://travis-ci.org/vitalibo/docker-library)
+
 Collection of Docker images
 
 ## Images
@@ -9,3 +11,4 @@ Collection of Docker images
 ## Links
 
 - [Docker Hub](https://hub.docker.com/u/vitalibo/)
+- [Travis-CI](https://travis-ci.org/vitalibo/)
