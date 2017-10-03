@@ -6,7 +6,7 @@ Collection of Docker images
 
 ## Images
 
-- [AWS Cli](https://hub.docker.com/r/vitalibo/aws-cli-docker/) latest
+- [AWS Cli](https://hub.docker.com/r/vitalibo/aws-cli/) latest
 
 ## Links
 
