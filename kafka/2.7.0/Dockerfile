@@ -6,10 +6,9 @@ ARG scalaVersion=2.13
 
 WORKDIR /opt/kafka
 
-RUN file="kafka_$scalaVersion-$kafkaVersion.tgz" \
-    && curl -f -sLS -o $file "https://downloads.apache.org/kafka/$kafkaVersion/$file" \
-    && tar xzf $file --strip-components=1 -C /opt/kafka \
-    && rm -rf $file site-docs
+RUN curl -f -sLS "https://archive.apache.org/dist/kafka/$kafkaVersion/kafka_$scalaVersion-$kafkaVersion.tgz" \
+    | tar xvz --strip-components=1 -C /opt/kafka \
+    && rm -rf site-docs
 
 EXPOSE 9092
 
